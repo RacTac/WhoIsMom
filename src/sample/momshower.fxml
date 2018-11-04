@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="215.0" prefWidth="215.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label alignment="CENTER" layoutX="16.0" layoutY="14.0" text="Is Cath or Lou mom?">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <effect>
+            <DropShadow color="#797979" height="10.0" offsetX="2.0" offsetY="2.0" radius="4.5" width="10.0" />
+         </effect>
+      </Label>
+      <Button fx:id="showResultButton" layoutX="53.0" layoutY="51.0" mnemonicParsing="false" onAction="#showResult" prefHeight="25.0" prefWidth="110.0" text="Show result" />
+      <ImageView fx:id="result" fitHeight="84.0" fitWidth="84.0" layoutX="66.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <Reflection />
+         </effect></ImageView>
+      <Label fx:id="mom" alignment="CENTER" layoutX="92.0" layoutY="82.0" text="Mom:">
+         <effect>
+            <DropShadow color="#4a4a4a" height="5.0" offsetX="1.0" offsetY="1.0" radius="2.0" width="5.0" />
+         </effect></Label>
+      <Label fx:id="cathOrLou" alignment="CENTER" layoutX="8.0" layoutY="133.0" prefHeight="17.0" prefWidth="42.0">
+         <effect>
+            <Reflection fraction="0.87" topOffset="-8.0" topOpacity="0.71" />
+         </effect></Label>
+   </children>
+</AnchorPane>
